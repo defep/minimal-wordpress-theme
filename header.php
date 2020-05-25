@@ -21,4 +21,4 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
             <h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-            <h5 class="mb-5"><?php bloginfo('description'); ?></h5>
+            <h6 class="mb-5"><?php bloginfo('description'); ?></h6>
