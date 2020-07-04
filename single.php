@@ -1,13 +1,22 @@
 <?php get_header(); ?>
 <?php the_post(); ?>
-<div id="last-modified">Updated: <?php the_modified_time('F j, Y'); ?> </div>
-<h2 class="mb-4"><a class="covert-link" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="last-modified"><?php the_date(); ?></div>
+        <h2><?php the_title(); ?></h2>
+    </div>
+</div>
 <?php the_content(); ?>
 
 <div class="row pt-4">
     <div class="col">
-        <?php comments_template(); ?>
+        <?php
+        if (comments_open() || get_comments_number()) {
+            comments_template();
+        } ?>
     </div>
 </div>
 
-<?php get_footer(); ?>
+<?php
+get_footer();

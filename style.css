@@ -8,9 +8,13 @@ Version: 0.1
 */
 
 .page-numbers {
-	display: inline-block;
-	margin: 0 5px 0 0;
-	text-decoration: none;
-	border-radius: 2px;
-	font-weight: 600;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.comment-form-comment textarea {
+    width: 100%;
 }
